@@ -95,19 +95,112 @@
 
 # obj = Robots('SK', 21)
 
-class Factory:
-    def __init__(self, material,zips):
-        self.material = material
-        self.zips = zips
+# class Factory:
+#     def __init__(self, material,zips):
+#         self.material = material
+#         self.zips = zips
 
-class Fact(Factory):
-    def __init__(self, material,zips,color):
-        super.__init__(material,zips)
-        self.color = color
+# class Fact(Factory):
+#     def __init__(self, material,zips,color):
+#         super.__init__(material,zips)
+#         self.color = color
 
-class Factor(Fact):
-    def __init__(self, material,zips,color,pockets):
-        super.__init__(material,zips,color)
-        self.pockets = pockets
+# class Factor(Fact):
+#     def __init__(self, material,zips,color,pockets):
+#         super.__init__(material,zips,color)
+#         self.pockets = pockets
 
-obj = Factor
+# obj = Factor()
+
+# Polymorphism
+
+# Method Overriding
+# class Animal:
+#     def show(self):
+#         print('I am in Animal')
+# class Human(Animal):
+#     def show(self):
+#         print('I am in Human')
+# obj = Human()
+# obj.show()
+
+# Duck Typing
+# class Animal:
+#     def show(self):
+#         print('I am in Animal')
+
+# class Human(Animal):
+#     def show(self):
+#         print('I am in Human')
+
+# obj = Human()
+# obj2 = Animal()
+# obj.show()
+# obj2.show()
+
+# Encapsulation
+
+# class Fact:
+#     _a = 'fact' # Protected Attribute
+#     __b = 'fact' # Private Attribute
+#     def _show(self):
+#         print('I am in Fact')
+# class Factory(Fact):
+#     def show(self):
+#         print(super()._a)
+
+# obj = Factory()
+# print(obj._a)
+# print(obj.__b) # Throws an error as the attribute is private
+
+# Abstraction
+# from abc import ABC, abstractmethod
+
+# class abstract(ABC):
+#     @abstractmethod
+#     def perimeter(self):
+#         pass
+    
+#     @abstractmethod
+#     def area(self):
+#         pass
+
+# class Square(abstract):
+#     def __init__(self,side):
+#         self.side = side
+#     def Perimeter(self):
+#         print('Per')
+#     def Area(self):
+#         print('Ar')
+
+# class Circle(abstract):
+#     def __init__(self,rad):
+#         self.raf = rad
+#     def Perimeter(self):
+#         print('Per')
+#     def Area(self):
+#         print('Ar')
+
+# obj = Circle(6)
+
+# Dunder (Double Underscore) Method 
+class Animal:
+    def __init__(self,name,age):
+        self.name = name 
+        self.age = age
+    
+    def __str__(self):
+        return f"Hello, I am {self.name}"
+    
+    def __add__(self, other):
+        sum = 0
+        for i in other:
+            sum = sum + i.age
+        return f"Your Sum of Ages are {self.age + sum}"
+
+obj = Animal("Lion", 12)
+obj2 = Animal("Lion", 12)
+obj3 = Animal("Lion", 12)
+obj4 = Animal("Lion", 12)
+
+print(obj+ (obj2, obj3, obj4))
