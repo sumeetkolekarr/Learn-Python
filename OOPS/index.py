@@ -184,23 +184,60 @@
 # obj = Circle(6)
 
 # Dunder (Double Underscore) Method 
-class Animal:
-    def __init__(self,name,age):
-        self.name = name 
-        self.age = age
+# class Animal:
+#     def __init__(self,name,age):
+#         self.name = name 
+#         self.age = age
     
-    def __str__(self):
-        return f"Hello, I am {self.name}"
+#     def __str__(self):
+#         return f"Hello, I am {self.name}"
     
-    def __add__(self, other):
-        sum = 0
-        for i in other:
-            sum = sum + i.age
-        return f"Your Sum of Ages are {self.age + sum}"
+#     def __add__(self, other):
+#         sum = 0
+#         for i in other:
+#             sum = sum + i.age
+#         return f"Your Sum of Ages are {self.age + sum}"
 
-obj = Animal("Lion", 12)
-obj2 = Animal("Lion", 12)
-obj3 = Animal("Lion", 12)
-obj4 = Animal("Lion", 12)
+# obj = Animal("Lion", 12)
+# obj2 = Animal("Lion", 12)
+# obj3 = Animal("Lion", 12)
+# obj4 = Animal("Lion", 12)
 
-print(obj+ (obj2, obj3, obj4))
+# print(obj+ (obj2, obj3, obj4))
+
+# Some Advance Stuff 
+
+# Decorators 
+# class Animal:
+#     @property 
+#     def show(self):
+#         print('Hello How are you?')
+# obj = Animal()
+# obj.show
+
+# Creating a Decorator 
+# def decorate(func):
+#     def wrapper(a,b):
+#         print('The Addition to your numbers are ')
+#         func(a,b)
+#         print('Thank You')
+#     return wrapper
+# @decorate
+# def add(a,b):
+#     print(f'Sum is {a+b}')
+# add(5,6)
+
+#  args(*) or arguments and kwargs(**) or keyword arguments
+# def add(*args):
+#     sum = 0
+#     for i in args:
+#         sum += i
+#     print(sum)
+
+# add(5,6,8,9)
+
+# def info(**kwargs):
+#     print('Your Info is:\n')
+#     for i in kwargs:
+#         print(f'{i}:{kwargs[i]}')
+# info(name='SK',age=22)
