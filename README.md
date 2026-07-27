@@ -6,6 +6,14 @@ Personal Python learning repo, now split into two parts:
 Everything from the original Python course (basics through OOP, plus two mini
 projects). Kept as an archive/reference - not actively worked on anymore.
 
+## `Python Basics - Practice/`
+Active. Original, solution-free exercises covering core Python (variables,
+operators, data types, conditionals, loops, lists/tuples, dicts/sets,
+functions, exceptions, file handling), ending in a small capstone project.
+Intended to build confidence in the basics before touching the roadmap
+folders below - see that folder's own README.md for how to work through it
+and get evaluated.
+
 ## Roadmap toward AI / Data Science / Visualization
 New folders, each targeting a specific gap between "finished a Python course"
 and "can read/write real AI/DS code":

@@ -28,16 +28,23 @@ workflow instead of plain scripts.
 ## What's in this repo
 - `Python course resources/` — archived material from the original Python
   course (basics through OOP + 2 mini projects). Reference only, not active.
-- Everything else at the root — the active roadmap toward AI / Data Science /
-  Visualization. See `README.md` for what each folder covers.
+- `Python Basics - Practice/` — active, current focus. Solution-free basics
+  exercises (variables through file handling) plus a capstone mini project,
+  used to rebuild confidence before moving on to the roadmap below.
+- Everything else at the root — the roadmap toward AI / Data Science /
+  Visualization, picked back up once the basics practice folder feels solid.
+  See `README.md` for what each folder covers.
 
 ## Progress checklist
 Update this section yourself as you go — check things off, add notes on what
 you tried, and commit it. That way "where did I leave off" is always answered
 by this file instead of your memory.
 
+- [ ] **Python Basics - Practice** — 11 files, 01 (variables/operators)
+  through 11 (contact book capstone). Work through in order, get each file
+  reviewed before moving to the next.
 - [ ] **Python Fundamentals - Advanced** — generators, decorators, context
-  managers, functools, type hints
+  managers, functools, type hints (paused until basics practice is done)
 - [ ] **NumPy** — arrays, vectorized ops, broadcasting, reshape/axis
 - [ ] **Pandas** — loading, cleaning, groupby, merge
   - [ ] Downloaded a real dataset (e.g. Titanic from Kaggle) — not included
